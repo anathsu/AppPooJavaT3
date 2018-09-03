@@ -11,22 +11,19 @@ public class TestaVetores {
 		float[] totais = new float[12];
 		
 		System.out.println("Tamanho do vetor: " + valores.length);
-		Scanner ler = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
 		
 		for (int i = 0; i < valores.length; i++) {
 			System.out.print("Digite um valor: ");
-			valores[i] = ler.nextFloat();
+			valores[i] = teclado.nextFloat();
 			System.out.print("Digite o mes: ");
-			mes = ler.nextInt();
+			mes = teclado.nextInt();
 			totais[mes-1] = totais[mes-1] + valores[i];
 		}
 		for (int i = 0; i < totais.length; i++) {
 			System.out.printf("%s = %.2f \n", meses[i], totais[i]);
 		}
 		float total = 0;
-//		for (int i = 0; i < valores.length; i++) {
-//			total = total + valores[i];
-//		}
 		for(float valor : valores){ // FOR IT
 			total = total + valor;
 		}
