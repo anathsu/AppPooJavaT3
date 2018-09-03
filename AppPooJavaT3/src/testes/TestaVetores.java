@@ -29,5 +29,4 @@ public class TestaVetores {
 		}
 		System.out.println("Total a ser pago: " + total);
 	}
-
 }
